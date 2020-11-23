@@ -1,0 +1,44 @@
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: $white;
+  font-size: 1.2rem;
+  font-family: inherit;
+  align-items: center;
+
+  border-radius: 2.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 12px -5px rgba($black, 100%);
+
+  padding: 1.3rem 2.5rem;
+
+  cursor: pointer;
+
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &-red {
+    background-color: $red;
+
+    &:hover {
+      background-color: darken($red, 15%);
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &-blue {
+    background-color: $blue;
+
+    &:hover {
+      background-color: darken($blue, 15%);
+    }
+  }
+}
