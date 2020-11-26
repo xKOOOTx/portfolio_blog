@@ -5,10 +5,6 @@
   &__list {
     display: flex;
 
-    &_item {
-
-    }
-
     &_link {
       display: inline-block;
       padding: 1.3em 1.3em;
@@ -23,11 +19,20 @@
 
       &:hover {
         background-color: $blue;
+
+      &.has-subnav {
+        position: relative;
+
+        &:after {
+          content: '';
+          display: block;
+        }
+      }
       }
     }
   }
 
-  .navigation__right {
+  &__right {
     display: flex;
   }
 
