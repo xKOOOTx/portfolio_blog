@@ -5,6 +5,19 @@
   &__list {
     display: flex;
 
+    &_item {
+      position: relative;
+
+      transition: all .3s linear;
+      &:hover {
+        background-color: $blue;
+
+        > .subnav {
+          display: block;
+        }
+      }
+    }
+
     &_link {
       display: inline-block;
       padding: 1.3em 1.3em;
@@ -17,17 +30,26 @@
 
       transition: all .3s ease-in-out;
 
-      &:hover {
-        background-color: $blue;
-
       &.has-subnav {
         position: relative;
+        padding-right: 3.5rem;
 
         &:after {
-          content: '';
+          position: absolute;
           display: block;
+          top: 50%;
+          right: 1.35rem;
+          margin-top: 2px;
+          transform: translateY(-50%);
+
+
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 6px 5px 0 5px;
+          border-color: #ffffff transparent transparent transparent;
         }
-      }
       }
     }
   }
@@ -36,7 +58,8 @@
     display: flex;
   }
 
-  &__search {
+  &__form {
+    display: flex;
     & input {
       padding: 1.42rem 2rem;
 
@@ -49,28 +72,28 @@
       outline: none;
       border: none;
 
-      filter: opacity(40%);
+      background-color: darken($primary, 5%);
 
       &:hover,
       &:active,
       &:focus {
-        filter: opacity(100%);
+        background-color: $primary;
       }
 
       &::placeholder {
         color: rgba($white, 40%);
-        filter: opacity(40%);
       }
     }
 
     &_btn {
-      background-color: #202020;
+      background-color: darken($primary, 5%);
       border: none;
       height: 100%;
       color: white;
 
       &:hover {
         color: rgba($white, 40%);
+        background-color: $primary;
       }
     }
   }

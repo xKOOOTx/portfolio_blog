@@ -9,7 +9,7 @@
   border-radius: 2.5rem;
   outline: none;
   border: none;
-  box-shadow: 4px 4px 12px -5px rgba($black, 100%);
+
 
   padding: 1.3rem 2.5rem;
 
@@ -18,7 +18,7 @@
   transition: all .2s ease-in-out;
 
   &:hover {
-    box-shadow: none;
+    box-shadow: 4px 4px 12px -5px rgba($black, 100%);
   }
 
   &-red {
