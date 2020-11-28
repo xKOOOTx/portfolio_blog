@@ -1,8 +1,20 @@
 .social {
   display: flex;
   justify-content: center;
-}
 
-.social__item {
-  margin: 0 .75rem;
+  &__item {
+    margin: 0 .75rem;
+  }
+
+  &__link {
+    & img {
+      border: 1px solid transparent;
+      border-radius: 50%;
+      transition: all .3s ease-in;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 }
