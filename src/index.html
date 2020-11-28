@@ -2,10 +2,38 @@
 layout: default
 title: BrainsCloud | Home
 ---
-
+<!--    Stories     -->
 <div class="stories">
-    <div class="stories__item"></div>
-    <div class="stories__item"></div>
-    <div class="stories__item"></div>
-    <div class="stories__item"></div>
-</div>
+    <div class="stories__item">
+        <img src="assets/images/story1.jpg" alt="stories__img" class="stories__preview">
+        <div class="stories__text">Отдыхаю на природе</div>
+        <time class="stories__date" datetime="21.09.2020">21.09.2020</time>
+    </div>
+    <div class="stories__item">
+        <img src="assets/images/story2.jpg" alt="stories__img" class="stories__preview">
+        <div class="stories__text">Заканчиваю сложный проект</div>
+        <time class="stories__date" datetime="15.09.2020">15.09.2020</time>
+    </div>
+    <div class="stories__item">
+        <img src="assets/images/story3.jpg" alt="stories__img" class="stories__preview">
+        <div class="stories__text">Переехал в новую квартиру</div>
+        <time class="stories__date" datetime="11.09.2020">11.09.2020</time>
+    </div>
+    <div class="stories__item">
+        <img src="assets/images/story4.jpg" alt="stories__img" class="stories__preview">
+        <div class="stories__text">Осень пришла</div>
+        <time class="stories__date" datetime="28.08.2020">28.08.2020</time>
+    </div>
+</div> <!-- /.stories   -->
+<!--    Add post    -->
+<div class="add-post">
+    <form action="" class="add-post__form" method="post">
+        <textarea name="post-text" placeholder="Напишите что-нибудь" class="add-post__form_textarea"></textarea>
+        <div class="add-post__form_actions">
+            <label for="add-post-file" class="add-post__file">
+                <input type="file" id="add-post-file">
+            </label>
+            <button type="submit" class="add-post__send"></button>
+        </div>
+    </form>
+</div><!-- /.add_post     -->
