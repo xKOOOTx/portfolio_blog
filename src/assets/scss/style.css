@@ -474,6 +474,9 @@ body {
   transform: scale(1.1);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
+.social__link img:active, .social__link img:focus, .social__link img:visited, .social__link img:link {
+  outline: none;
+}
 
 .btn {
   display: inline-block;
