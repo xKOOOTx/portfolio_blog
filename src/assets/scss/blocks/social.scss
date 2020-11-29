@@ -7,6 +7,12 @@
   }
 
   &__link {
+    &:active,
+    &:focus,
+    &:visited,
+    &:link {
+      outline: none;
+    }
     & img {
       border: 1px solid transparent;
       border-radius: 50%;
@@ -15,12 +21,7 @@
         transform: scale(1.1);
         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
       }
-      &:active,
-      &:focus,
-      &:visited,
-      &:link {
-        outline: none;
-      }
+
     }
   }
 }

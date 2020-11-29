@@ -2,6 +2,13 @@
    v2.0-modified | 20110126
    License: none (public domain)
 */
+a:active,
+a:focus,
+a:visited,
+a:link {
+  outline: none !important;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -465,6 +472,9 @@ body {
 .social__item {
   margin: 0 0.75rem;
 }
+.social__link:active, .social__link:focus, .social__link:visited, .social__link:link {
+  outline: none;
+}
 .social__link img {
   border: 1px solid transparent;
   border-radius: 50%;
@@ -473,9 +483,6 @@ body {
 .social__link img:hover {
   transform: scale(1.1);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
-}
-.social__link img:active, .social__link img:focus, .social__link img:visited, .social__link img:link {
-  outline: none;
 }
 
 .btn {
