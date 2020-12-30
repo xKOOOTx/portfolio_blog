@@ -1,0 +1,21 @@
+.post {
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+
+  background-color: $primary;
+  box-shadow: 0 15px 25px rgba($black, .35);
+  border-radius: 5px;
+
+  &__content {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: #D2D2D2;
+  }
+  &__data {
+    color: #828282;
+    line-height: 1.2;
+  }
+}
