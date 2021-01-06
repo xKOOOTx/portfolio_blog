@@ -12,6 +12,11 @@
 
 .navigation {
   &__list {
+    &_subitem {
+      &:hover {
+        background-color: darken($blue, 5%);
+      }
+    }
     &_subLink {
       display: block;
       padding: .45rem 1.2rem;
