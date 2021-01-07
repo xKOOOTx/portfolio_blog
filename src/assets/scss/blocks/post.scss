@@ -9,7 +9,7 @@
   overflow: hidden;
 
   &__header {
-    margin: -2.5rem -2.5rem 2.5rem;
+    margin: 0 0 2.5rem;;
 
     &_preview {
       display: block;
@@ -17,17 +17,55 @@
       height: auto;
     }
 
-    &-video {
-      margin: 0 0 2.5rem;
+    &-preview {
+      margin: -2.5rem -2.5rem 2.5rem;
     }
   }
 
   &__content {
     margin-bottom: 2rem;
 
-    &_text {
+    &_description {
       font-size: 1.4rem;
       color: #D2D2D2;
+    }
+
+    &_text {
+      font-size: 1.4rem;
+      color: $white;
+
+      h2, h3, h4, h5, h6 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      h3 {
+        font-size: 1.25em;
+      }
+
+      h4 {
+        font-size: 1.15em;
+      }
+
+      h5, h6 {
+        font-size: 1em;
+      }
+
+      ul, ol {
+        margin-bottom: 2rem;
+      }
+
+      ol {
+        list-style: decimal inside;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
     }
     &_title {
       margin-bottom: 1.5rem;
@@ -42,6 +80,10 @@
         &:hover {
           text-decoration: underline;
         }
+      }
+
+      &-mb0 {
+        margin-bottom: 0;
       }
     }
   }
@@ -89,6 +131,31 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1.5rem;
+
+    font-size: 1.2rem;
+    color: $white;
+
+    a {
+      color: inherit;
+      opacity: .6;
+      text-decoration: none;
+      transition: all .2s linear;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &_icon {
+      margin-left: .5rem;
     }
   }
 }

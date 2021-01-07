@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 8rem;
+
+  &__item {
+    margin: 0 .5rem;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-color: $paginationBg;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba($black, .15);
+
+    font-size: 1.4rem;
+    line-height: 4rem;
+    color: $white;
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: all .2s linear;
+
+    &:hover {
+      background-color: lighten($paginationBg, 3%);
+      border: 1px solid transparentize($black, .5);
+      border-radius: 3px;
+    }
+
+    &.active {
+      background-color: $blue;
+      box-shadow: 0 0 10px rgba($blue, .15);
+      border: 1px solid transparentize($blue, .5);
+      border-radius: 3px;
+    }
+  }
+}
