@@ -32,6 +32,7 @@
       background-color: lighten($paginationBg, 3%);
       border: 1px solid transparentize($black, .5);
       border-radius: 3px;
+      text-decoration: none;
     }
 
     &.active {

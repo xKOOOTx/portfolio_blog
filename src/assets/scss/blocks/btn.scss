@@ -26,6 +26,7 @@
 
     &:hover {
       background-color: $red;
+      text-decoration: none;
     }
 
     &:focus {
@@ -39,5 +40,13 @@
     &:hover {
       background-color: $blue;
     }
+  }
+
+  &-rounded {
+    border-radius: .41em;
+  }
+
+  &-sm {
+    padding: .7em 1.25em;
   }
 }
