@@ -7,10 +7,18 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include breakpoint($mobile-bp) {
+      flex-direction: column;
+    }
 
     &_item {
       width: 50%;
       margin-bottom: 2.5rem;
+
+      @include breakpoint($mobile-bp) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
     }
 
     &_title {
@@ -20,6 +28,10 @@
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
+
+      @include breakpoint($mobile-bp) {
+        font-size: 1.2rem;
+      }
 
       a {
         color: inherit;
@@ -34,6 +46,10 @@
     &_date {
       font-size: 1.2rem;
       color: $relatedDate;
+
+      @include breakpoint($mobile-bp) {
+        font-size: 1rem;
+      }
     }
   }
 }

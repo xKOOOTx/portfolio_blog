@@ -2,13 +2,29 @@
   display: flex;
   justify-content: space-between;
 
+  @include breakpoint($tablet-bp) {
+    justify-content: flex-end;
+  }
+
   &__list {
     display: flex;
+
+    @include breakpoint($tablet-bp) {
+      display: none;
+    }
 
     &_item {
       position: relative;
 
       transition: all .3s linear;
+
+      @include breakpoint($tablet-bp) {
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $primary!important;
+        }
+      }
       &:hover {
         background-color: $blue;
 
@@ -35,9 +51,22 @@
 
       transition: all .3s ease-in-out;
 
+      @include breakpoint($tablet-bp) {
+        padding-left: 2rem;
+        padding-right: 0;
+        width: 100%;
+
+        font-size: 1.4rem;
+        line-height: 0;
+      }
+
       &.has-subnav {
         position: relative;
         padding-right: 3.5rem;
+
+        @include breakpoint($tablet-bp) {
+          width: 100%;
+        }
 
         &:after {
           position: absolute;
@@ -55,6 +84,19 @@
           border-width: 6px 5px 0 5px;
           border-color: #ffffff transparent transparent transparent;
         }
+      }
+
+
+    }
+
+    &-mobile {
+      display: none;
+
+      @include breakpoint($tablet-bp) {
+        display: flex;
+        flex-direction: column;
+
+        margin: 3rem 0;
       }
     }
   }

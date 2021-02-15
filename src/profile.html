@@ -1,0 +1,61 @@
+---
+layout: default
+title: Alex blog | Profile
+---
+<!--    profile    -->
+
+<h1 class="page__title">Профиль</h1>
+
+<form action="/"
+      class="form"
+      method="post"
+>
+    <div class="cabinet">
+        <div class="cabinet__form">
+            <div class="form__group-md">
+                <input
+                        type="text"
+                        class="form__control"
+                        placeholder="Ваше имя"
+                        value="Алексей"
+                >
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group-md">
+                <input
+                        type="email"
+                        class="form__control"
+                        placeholder="Ваш email"
+                        value="email@email.com"
+                >
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group-md">
+                <input
+                        type="password"
+                        class="form__control"
+                        placeholder="Ваш пароль"
+                >
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group-md">
+                <input
+                        type="password"
+                        class="form__control"
+                        placeholder="Подтвердите пароль"
+                >
+                <span class="form__line"></span>
+            </div>
+        </div>
+        <div class="cabinet__avatar">
+            <img src="https://placehold.it/150" alt="avatar">
+            <label class="cabinet__file">
+                <input type="file">
+                выбрать аватар
+            </label>
+        </div>
+    </div>
+    <div class="form__footer">
+        <button type="submit" class="btn btn-blue btn-sm btn-rounded">Сохранить</button>
+    </div>
+</form>

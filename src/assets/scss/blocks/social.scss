@@ -24,4 +24,14 @@
 
     }
   }
+
+  @include breakpoint($tablet-bp) {
+    padding: 2rem;
+
+    &-fullversion {
+      display: none;
+    }
+  }
+
+
 }

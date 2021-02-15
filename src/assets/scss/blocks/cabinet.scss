@@ -1,0 +1,45 @@
+.cabinet {
+  display: flex;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
+
+  &__form {
+    width: 100%;
+
+    @include breakpoint($mobile-bp) {
+      order: 2;
+    }
+  }
+
+  &__avatar {
+    flex-grow: 1;
+    padding-left: 11rem;
+
+    @include breakpoint($mobile-bp) {
+      order: 1;
+      padding-left: 0;
+      margin-bottom: 2rem;
+    }
+
+    & img {
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__file {
+    font-size: 1.4rem;
+    color: $blue;
+    text-decoration: underline;
+    cursor: pointer;
+
+    input {
+      display: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

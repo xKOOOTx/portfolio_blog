@@ -151,7 +151,7 @@ function js(cb) {
         .pipe(webpackStream({
           mode: "production",
           output: {
-            filename: 'app.js',
+            filename: 'modal.js',
           },
           module: {
             rules: [
@@ -186,7 +186,7 @@ function jsWatch(cb) {
         .pipe(webpackStream({
           mode: "development",
           output: {
-            filename: 'app.js',
+            filename: 'modal.js',
           }
         }))
         .pipe(dest(path.build.js))

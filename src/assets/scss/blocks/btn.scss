@@ -17,27 +17,27 @@
 
   transition: all .2s ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 4px 4px 12px -5px rgba($black, 100%);
+    text-decoration: none;
   }
 
   &-red {
     background-color: darken($red, 15%);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $red;
       text-decoration: none;
-    }
-
-    &:focus {
-      outline: none;
       border: none;
     }
   }
 
   &-blue {
     background-color: darken($blue, 15%);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $blue;
     }
   }

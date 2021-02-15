@@ -1,4 +1,5 @@
 @import "vars";
+@import "mixins";
 @import "vendor/reset.scss";
 
 html {
@@ -12,6 +13,16 @@ body {
     font-size: 1.4rem;
     color: $white;
     line-height: 1.5;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
+    }
 }
 
 *,
@@ -39,6 +50,7 @@ a {
 @import "blocks/social.scss";
 @import "blocks/btn.scss";
 @import "blocks/navigation.scss";
+@import "blocks/burger.scss";
 @import "blocks/subnav.scss";
 @import "blocks/stories.scss";
 @import "blocks/add-post.scss";
@@ -48,3 +60,8 @@ a {
 @import "blocks/related.scss";
 @import "blocks/comments.scss";
 @import "blocks/form.scss";
+@import "blocks/work.scss";
+@import "blocks/tags.scss";
+@import "blocks/cabinet.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal.scss";

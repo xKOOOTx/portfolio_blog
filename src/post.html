@@ -6,11 +6,11 @@ title: Alex blog | Post
 <article class="post">
     <div class="post__actions">
         <a href="index.html">вернуться назад</a>
-        <a href="#">поделиться<img src="./assets/images/share.svg"
+        <a href="#" data-modal="share-modal">поделиться<img src="./assets/images/share.svg"
                  alt="share" class="post__actions_icon"></a>
     </div>
     <div class="post__header">
-        <h2 class="post__content_title post__content_title-mb0">
+        <h2 class="post__content_title post__content_title-open">
             Как создавать сайты легко
         </h2>
         <ul class="post__data">
@@ -109,8 +109,11 @@ title: Alex blog | Post
         <h3 class="post__subtitle">Обсуждение</h3>
         <form class="form" action="/" method="post">
             <div class="form__group">
-                <textarea name="comment-text" placeholder="Текст комментария"
-                class="form__control form__control-textarea"></textarea>
+                <textarea name="comment-text"
+                          placeholder="Текст комментария"
+                          class="form__control form__control-textarea"
+                          data-autoresize
+                ></textarea>
                 <span class="form__line"></span>
             </div>
             <button type="submit" class="btn btn-blue btn-rounded btn-sm">Отправить</button>

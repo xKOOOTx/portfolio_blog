@@ -4,7 +4,7 @@ title: Alex blog
 ---
 <!--    Stories     -->
 <div class="stories">
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img src="assets/images/story1.jpg" alt="stories__img" class="stories__preview">
         <div class="stories__text">Отдыхаю на природе</div>
         <time class="stories__date" datetime="21.09.2020">21.09.2020</time>
@@ -28,12 +28,16 @@ title: Alex blog
 <!--    Add post    -->
 <div class="add-post">
     <form action="" class="add-post__form" method="post">
-        <textarea name="post-text" placeholder="Напишите что-нибудь" class="add-post__form_textarea"></textarea>
+        <textarea name="post-text"
+                  placeholder="Напишите что-нибудь"
+                  class="add-post__form_textarea"
+                  data-autoresize
+        ></textarea>
         <div class="add-post__form_actions">
             <label for="add-post-file" class="add-post__file">
                 <input type="file" id="add-post-file">
             </label>
-            <button type="submit" class="add-post__send"></button>
+            <button type="submit" class="add-post__send">Отправить</button>
         </div>
     </form>
 </div><!-- /.add_post     -->

@@ -8,11 +8,26 @@
   border-radius: 0 0 5px 5px;
 
   background-color: $blue;
+
+  @include breakpoint($tablet-bp) {
+    position: static;
+    width: 100%;
+    padding-left: 1rem;
+
+    background-color: $primary;
+    box-shadow: none;
+    border-radius: 0;
+  }
 }
 
 .navigation {
   &__list {
     &_subitem {
+      @include breakpoint($tablet-bp) {
+        &:hover {
+          background-color: none;
+        }
+      }
       &:hover {
         background-color: darken($blue, 5%);
       }
@@ -26,6 +41,12 @@
       font-family: inherit;
       font-size: 1.2rem;
 
+      @include breakpoint($tablet-bp) {
+        padding-left: 2rem;
+        padding-right: 0;
+
+        font-size: 1.2rem;
+      }
 
       &:hover {
         text-decoration: underline;

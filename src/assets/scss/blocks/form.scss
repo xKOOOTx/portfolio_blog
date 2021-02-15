@@ -1,14 +1,16 @@
 .form {
-
   &__group {
     margin-bottom: 1.5rem;
     position: relative;
+    &-md {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__control {
     display: block;
     width: 100%;
-    padding: .5rem 0;
+    padding: .5rem 0 .75rem;
 
     background: none;
     border: none;
@@ -31,7 +33,7 @@
     &-textarea {
       overflow: hidden;
 
-      height: 30px;
+      height: 31px;
       resize: none;
     }
 
@@ -49,5 +51,29 @@
     z-index: 1;
 
     transition: width .2s linear ;
+  }
+
+  &-auth {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  &__footer {
+    &-center {
+      text-align: center;
+    }
+    &_list {
+      display: flex;
+      justify-content: center;
+
+      font-size: 1.2rem;
+      line-height: 1.2;
+      & li {
+        margin: 0 .5rem;
+      }
+      & a {
+        color: $white;
+      }
+    }
   }
 }

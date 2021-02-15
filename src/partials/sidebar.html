@@ -1,14 +1,15 @@
-<aside class="sidebar">
+<aside class="sidebar" id="sidebar">
     <div class="sidebar__header">
         <img src="../assets/images/sidebar_header.jpg" alt="sidebar_header.jpg">
     </div>
     <div class="sidebar__content">
         <div class="profile">
-                <img src="../assets/images/profile_photo1_small.jpg" alt="profile__avatar" class="profile__avatar">
-            <div class="profile__name">Alex Gusev</div>
-            <div class="profile__prof">блог front-end разработчика</div>
-
-            <ul class="social">
+            <img src="../assets/images/profile_photo1_small.jpg" alt="profile__avatar" class="profile__avatar">
+            <div class="profile__header">
+                <div class="profile__name">Alex Gusev</div>
+                <div class="profile__prof">блог front-end разработчика</div>
+            </div>
+            <ul class="social social-fullversion">
                 <li class="social__item">
                     <a href="https://www.instagram.com/kooot553/" class="social__link" target="_blank">
                         <img src="../assets/images/instagram.svg" alt="Alex Gusev instagram" class="social__link_img">
@@ -31,9 +32,40 @@
                 Учусь и&nbsp;работаю с&nbsp;GeekBrains.
             </div><!--  /.profile__text   -->
         </div><!-- /.profile  -->
+        <ul class="navigation__list navigation__list-mobile">
+            <li class="navigation__list_item">
+                <a href="../index.html" class="navigation__list_link">главная</a>
+            </li>
+            <li class="navigation__list_item">
+                <a href="#" class="navigation__list_link has-subnav">статьи</a>
+                <ul class="subnav">
+                    <li class="navigation__list_subitem">
+                        <a href="#" class="navigation__list_subLink">Создание сайтов</a>
+                    </li>
+                    <li class="navigation__list_subitem">
+                        <a href="#" class="navigation__list_subLink">Заглушка</a>
+                    </li>
+                    <li class="navigation__list_subitem">
+                        <a href="#" class="navigation__list_subLink">Заглушка</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation__list_item">
+                <a href="../text.html" class="navigation__list_link">обо мне</a>
+            </li>
+            <li class="navigation__list_item">
+                <a href="../text.html" class="navigation__list_link">заглушка</a>
+            </li>
+            <li class="navigation__list_item">
+                <a href="../profile.html" class="navigation__list_link">Профиль</a>
+            </li>
+            <li class="navigation__list_item">
+                <a href="../signin.html" class="navigation__list_link">Выйти</a>
+            </li>
+        </ul>
     </div><!--  /.sidebar__content  -->
     <div class="sidebar__footer">
-        <a href="#" class="btn btn-red">Мои работы</a>
-        <button class="btn btn-blue">Написать мне</button>
+        <a href="../works.html" class="btn btn-red">Мои работы</a>
+        <button class="btn btn-blue" data-modal="contact-modal">Написать мне</button>
     </div>
 </aside>

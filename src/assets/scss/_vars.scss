@@ -2,6 +2,7 @@ $primary:         #202020;
 $secondary:       #121212;
 $white:           #fff;
 $black:           #000;
+$grey:            #B2B2B2;
 $border:          #1c1c1c;
 $blue:            #3137C9;
 $red:             #ED3024;
@@ -12,9 +13,14 @@ $relatedTitle:    #F3EBA2;
 $relatedDate:     #828282;
 $commentsPubdate: #757575;
 $commentsReply:   #107EFF;
+$tags:            #EA8C1E;
 
 
 $z-index-sidebar: 1000;
-$z-index-header: 1000;
+$z-index-header:  1000;
+$z-index-modal:   1010;
 
-$sidebar-width: 300px;
+$sidebar-width:   300px;
+
+$tablet-bp:       1101px; //real 991px (just +110px)
+$mobile-bp:       639px;  //real 575px (just +64px)
