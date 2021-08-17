@@ -5,7 +5,7 @@ const body = document.body;
 
 burger.addEventListener('click', event => {
     if(body.classList.contains('show-sidebar')) {
-        closeSidebar();
+        closeSidebar(body);
     } else {
         showSidebar();
     }

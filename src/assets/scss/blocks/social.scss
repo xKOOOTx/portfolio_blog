@@ -23,6 +23,10 @@
       }
 
     }
+    &_telegram {
+      width: 27px;
+      height: 28px;
+    }
   }
 
   @include breakpoint($tablet-bp) {

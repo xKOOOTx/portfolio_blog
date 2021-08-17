@@ -3,11 +3,12 @@
         <button type="button" class="modal__close">
             <img src="../assets/images/close.svg" alt="Close">
         </button>
-        <form action="/" method="post" class="form">
+        <form action="#" class="form" id="form">
             <div class="form__group form__group-md">
                 <input
                         type="text"
-                        class="form__control"
+                        class="form__control _req"
+                        name="userName"
                         placeholder="Ваше имя"
                 >
                 <span class="form__line"></span>
@@ -15,14 +16,16 @@
             <div class="form__group form__group-md">
                 <input
                         type="email"
-                        class="form__control"
+                        class="form__control _req _email"
+                        name="userEmail"
                         placeholder="Ваш email"
                 >
                 <span class="form__line"></span>
             </div>
             <div class="form__group form__group-md">
                 <textarea
-                        class="form__control form__control-textarea"
+                        class="form__control form__control-textarea _req"
+                        name="text"
                         placeholder="Текст сообщения"
                 ></textarea>
                 <span class="form__line"></span>
@@ -39,11 +42,11 @@
         <ul class="modal__footer">
             <li>
                 email:
-                <a href="mailto:info@mywebsite.com ">info@mywebsite.com</a>
+                <a href="mailto:info@mywebsite.com ">kooot123@gmail.com</a>
             </li>
             <li>
                 тел:
-                <a href="tel:+70123456789">+7-012-345-67-89</a>
+                <a href="tel:+79165839211">+7-916-583-92-11</a>
             </li>
         </ul>
     </div>
